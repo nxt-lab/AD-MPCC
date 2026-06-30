@@ -65,12 +65,16 @@ All four controllers are evaluated on a uniform road surface with $μ_{max}$ = 1
   <img src="showcase/IROS2026-single.gif" width="720" alt="Single-Surface Scenario"/>
 </p>
 
+<div align="center">
+
 | Controller | Avg. Lap Time (s) | Avg. v_x (m/s) | Avg. Lateral Offset (m) | Avg. Comp. Time (ms) |
 |:---:|:---:|:---:|:---:|:---:|
 | MPCC | 75.57 | 11.38 | 1.953 | 20.45 |
 | A-MPCC | 75.62 | 11.41 | 1.815 | 21.21 |
 | Diff-MPCC | **64.08** | **13.59** | 1.040 | 23.56 |
 | AD-MPCC | 64.89 | 13.50 | **0.926** | 24.18 |
+
+</div>
 
 ### Multi-Surface Scenario
 
@@ -80,12 +84,16 @@ The track surface varies from $μ_{max}$ = 0.7 to 1.2 across different sections 
   <img src="showcase/IROS2026-multiple.gif" width="720" alt="Multi-Surface Scenario"/>
 </p>
 
+<div align="center">
+
 | Controller | Avg. Lap Time (s) | Avg. v_x (m/s) | Avg. Lateral Offset (m) |
 |:---:|:---:|:---:|:---:|
 | MPCC | crashed | — | — |
 | A-MPCC | crashed | — | — |
 | Diff-MPCC | crashed | — | — |
 | **AD-MPCC** | **74.9** | **11.65** | **1.069** |
+
+</div>
 
 ---
 
