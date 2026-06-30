@@ -38,7 +38,7 @@
 AD-MPCC combines two components operating at each time step:
 
 - **Online Parameter Estimation (Sec. III-A):** A prior-regularized moving-horizon estimator (MHE) with exponentially decaying weights rapidly updates Pacejka tire parameters to capture surface transitions in real time.
-- **Differentiable MPCC (Sec. III-B)**: Compute sensitivity of the MPCC solution w.r.t. objective weights are computed via the implicit function theorem (IFT) to find optimal MPCC weights.
+- **Differentiable MPCC (Sec. III-B)**: Compute the sensitivity of the MPCC solution w.r.t. objective weights via the implicit function theorem (IFT) to find optimal MPCC weights.
 - **PaIML (Sec. III–C):** A Pacejka-informed machine learning model (PaIML) is trained offline to approximate these optimal weights from a 5-dimensional input, enabling real-time weight adaptation.
 
 ---
