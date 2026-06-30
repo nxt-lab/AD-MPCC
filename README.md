@@ -85,7 +85,7 @@ The track surface varies from $μ_{max}$ = 0.7 to 1.2 across different sections 
 | MPCC | crashed | — | — |
 | A-MPCC | crashed | — | — |
 | Diff-MPCC | crashed | — | — |
-| **AD-MPCC** | **84.3** | **10.49** | **0.926** |
+| **AD-MPCC** | **74.9** | **11.65** | **1.069** |
 
 ---
 
