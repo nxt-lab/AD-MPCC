@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://2026.ieee-iros.org/"><img src="https://img.shields.io/badge/IROS-2026-blue.svg" alt="IROS 2026"/></a>
-  <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg" alt="arXiv"/></a>
+  <a href="https://arxiv.org/abs/2607.00141"><img src="https://img.shields.io/badge/arXiv-2607.00141-b31b1b.svg" alt="arXiv"/></a>
   <a href="https://github.com/nxt-lab/AD-MPCC"><img src="https://img.shields.io/badge/GitHub-AD--MPCC-black?logo=github" alt="GitHub"/></a>
   <a href="https://github.com/f1tenth/f1tenth_gym"><img src="https://img.shields.io/badge/F1TENTH_Gym-black?logo=github" alt="F1TENTH Gym"/></a>
 </p>
@@ -220,7 +220,15 @@ Each run reads the corresponding input simulation log (`scale0.25_TK20_log_Osche
 ## Citation
 
 ```bibtex
-TBD
+@misc{nguyen2026admpccadaptivedifferentiablemodel,
+      title={AD-MPCC: Adaptive Differentiable Model Predictive Contouring Control for Autonomous Racing}, 
+      author={Nam T. Nguyen and Binh Nguyen and Ahmad Amine and Thanh Vo-Duy and Rahul Mangharam and Truong X. Nghiem},
+      year={2026},
+      eprint={2607.00141},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2607.00141}, 
+}
 ```
 
 ---
