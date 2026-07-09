@@ -38,7 +38,6 @@ def main():
     model_to_use = 'dynamic'
     map_name = 'Oschersleben'
     rotate_map = True
-    use_dyn_friction = False
     slip_mode = True
 
     control_step = 100.0
@@ -55,26 +54,6 @@ def main():
         conf_dict = yaml.load(file, Loader=yaml.FullLoader)
     conf = Namespace(**conf_dict)
 
-    if use_dyn_friction:
-        if map_name == 'l_shape':
-            tpamap_name = './maps/l_shape/friction_data/l_shape_l720_track_tpamap.csv'
-            tpadata_name = './maps/l_shape/friction_data/l_shape_l720_track_tpadata.json'
-        if map_name == 'DualLaneChange':
-            tpamap_name = './maps/DualLaneChange/friction_data/DualLaneChange3zv2_track_tpamap.csv'
-            tpadata_name = './maps/DualLaneChange/friction_data/DualLaneChange3zv2_track_tpadata.json'
-        if map_name == 'SaoPaulo':
-
-            tpamap_name = './maps/SaoPaulo/friction_data/SaoPaulo_track_tpamap.csv'
-            tpadata_name = './maps/SaoPaulo/friction_data/SaoPaulo_track_tpadata.json'
-        if map_name == 'Nuerburgring':
-            tpamap_name = './maps/Nuerburgring/friction_data/Nuerburgring_tpamap.csv'
-            tpadata_name = './maps/Nuerburgring/friction_data/Nuerburgring_tpadata.json'
-
-        tpamap = np.loadtxt(tpamap_name, delimiter=';', skiprows=1)
-        print("I am here!")
-        tpadata = {}
-        with open(tpadata_name) as f:
-            tpadata = json.load(f)
 
     raceline = np.loadtxt(conf.wpt_path, delimiter=";", skiprows=3)
     waypoints = np.array(raceline)
